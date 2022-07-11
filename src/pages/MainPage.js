@@ -9,19 +9,18 @@ const MainPageDiv = styled.div`
   text-align: center;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  
 `
 
 const MainPage = () => {
   return (
     <MainPageDiv>
       <ResponsiveAppBar />
-      <br></br>
       <ProductInfo />
       <div >
-        MainPage
         <br></br>
-        <h1>DressUP!!</h1>
+        <h4>DressUp</h4>
+        <br></br>
       </div>
     </MainPageDiv>
 	
