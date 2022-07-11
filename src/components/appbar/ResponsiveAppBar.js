@@ -14,7 +14,7 @@ const AppBarDiv = styled.div`
 const ResponsiveAppBar = () => {
   return (
     <div className="App">
-      <AppBar position="static" style={{backgroundColor: "white"}}>
+      <AppBar position="fixed" style={{backgroundColor: "white"}}>
         <Toolbar>
           <IconButton aria-label="app" color="inherit">
             <AppBarDiv>
