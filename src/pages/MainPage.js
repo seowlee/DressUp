@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import ResponsiveAppBar from '../components/appbar/ResponsiveAppBar';
 import ProductInfo from '../components/product/ProductInfo';
+import ShoppingCartButton from '../components/cart/ShoppingCartButton';
 
 const MainPageDiv = styled.div`
-  background-color: black;
+  // background-color: black;
   color: white;
   text-align: center;
   align-items: center;
@@ -16,6 +17,7 @@ const MainPage = () => {
   return (
     <MainPageDiv>
       <ResponsiveAppBar />
+      <ShoppingCartButton />
       <ProductInfo />
       <div >
         <br></br>
@@ -23,7 +25,6 @@ const MainPage = () => {
         <br></br>
       </div>
     </MainPageDiv>
-	
   )
 }
 

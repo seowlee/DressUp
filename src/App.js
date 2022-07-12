@@ -4,6 +4,7 @@ import LogoPage from './pages/LogoPage';
 import MainPage from './pages/MainPage';
 import PaymentPage from './pages/PaymentPage';
 import About from './pages/PaymentPage';
+import ShoppingCartPage from './pages/ShoppingCartPage';
 // import Routes from "./routes/Routes";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 			  <Route path="/" element={<LogoPage />}></Route>
 			  <Route path="/main" element={<MainPage />}></Route>
 			  <Route path="/payment" element={<PaymentPage />}></Route>
+			  <Route path="/shoppingcart" element={<ShoppingCartPage />}></Route>
 		  </Routes>
 	</BrowserRouter>
   );
