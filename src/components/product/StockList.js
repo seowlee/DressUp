@@ -30,10 +30,14 @@ const StockList = () => {
             "https://picsum.photos/800/600?random=1",
             "https://picsum.photos/800/600?random=2"]}
 	];
+  const stockarr = arr.filter(obj => {
+    return obj.name === '옥스퍼드 패널 원피스';
+  });
+  // console.log(typeof stockarr);
 
   return (
     <Carousel cols={4} rows={1} gap={10} loop>
-      {arr.map((data)=>{
+      {stockarr.map((data)=>{
         return <Carousel.Item key={data.id}>
         <img width="100%" src={data.url[0]} />
         <div>{data.name}</div>
