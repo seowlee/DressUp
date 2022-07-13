@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { AttentionSeeker } from 'react-awesome-reveal';
-import QRpage from './QRpage';
 
 const LogoPageDiv = styled.div`
   background-color: white;
@@ -18,7 +17,7 @@ function LogoPage() {
 	const navigate = useNavigate();
 	const timeout = () => {
 		setTimeout(() => {
-			navigate('/QRpage');
+			navigate('/main');
 		}, 2000);
 	};
 	useEffect(() => {
