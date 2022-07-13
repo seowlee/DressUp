@@ -5,6 +5,7 @@ import { AttentionSeeker } from 'react-awesome-reveal';
 import QRpage from './QRpage';
 
 const LogoPageDiv = styled.div`
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +30,7 @@ function LogoPage() {
 	return (
 		<LogoPageDiv>
 			<AttentionSeeker tada>
-				<img alt='logo' src='img/logo1.png' width={200} height={200}/>
+				<img alt='logo_start' src='img/logo_start.png' width={500} height={500}/>
 			</AttentionSeeker>
 		</LogoPageDiv>
 	);
