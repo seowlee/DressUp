@@ -8,7 +8,6 @@ import BottomNav from '../components/BottomNav'
 import Typography from '@mui/material/Typography'
 import './Font.css'
 
-
 const QR = (props) => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
@@ -19,20 +18,16 @@ const QR = (props) => {
         onResult={(result, error) => {
           if (!!result) {
             setData(result?.text);
-            console.log(result)
-            navigate("/main")
           }
-  
+
           if (!!error) {
-            // console.info(error);
+            console.info(error);
           }
         }}
-
-        style={{ flex:1}}
-   
+        style={{ width: '100%' }}
       />
       <BottomNav/>
-      <h4>&copy;DressUp, Inc. All copyrights reserved</h4>
+      {/* <h4>&copy;DressUp, Inc. All copyrights reserved</h4> */}
    
       {/* <Route
       path='/MainPage'

@@ -4,6 +4,7 @@ import LogoPage from './pages/LogoPage';
 import MainPage from './pages/MainPage';
 
 import QRpage from './pages/QRpage';
+import PaymentFinPage from './pages/PaymentfinPage';
 import axios from 'axios'; 
 
 
@@ -23,8 +24,8 @@ function App() {
 			  <Route path="/main" element={<MainPage />}></Route>
 			  <Route path="/QRpage" element={<QRpage />}></Route>
 			  <Route path='/QRstock' element={<QRpage/>}></Route>
-
 			  <Route path="/payment" element={<PaymentPage />}></Route>
+			  <Route path="/paymentfin" element={<PaymentFinPage />}></Route>
 			  <Route path="/shoppingcart" element={<ShoppingCartPage />}></Route>
 
 		  </Routes>

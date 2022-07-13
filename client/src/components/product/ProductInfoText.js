@@ -26,7 +26,7 @@ const ProductInfoText = () => {
 	const filtered = arr.filter(obj => {
 		return obj.name === '옥스퍼드 패널 원피스';
 	});
-	console.log(filtered);
+	// console.log(filtered);
 
 	return (
 		<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>

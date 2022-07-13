@@ -32,7 +32,8 @@ const ProductPhotoList = () => {
   // const productPhotos = product.url.map((url, idx) => {
   //   console.log(url);
   // });
-
+  console.log("hahahahah")
+  console.log(arr[0].url)
   return (
     <Carousel 
 		cols={1} 
