@@ -3,8 +3,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LogoPage from './pages/LogoPage';
 import MainPage from './pages/MainPage';
 import PaymentPage from './pages/PaymentPage';
-import About from './pages/PaymentPage';
 import ShoppingCartPage from './pages/ShoppingCartPage';
+import { Button } from 'antd';
+import './App.css';
 // import Routes from "./routes/Routes";
 
 function App() {

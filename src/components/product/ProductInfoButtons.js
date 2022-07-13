@@ -6,7 +6,9 @@ import {
 	ButtonGroup,
 	} from '@mui/material';
 
-const ProductInfoButtons = () => {
+const ProductInfoButtons = (history) => {
+	const addCart = () => {
+	}
   return (
 	<Grid 
 		pt={3}
@@ -14,7 +16,7 @@ const ProductInfoButtons = () => {
 		alignItems="center">
 		<ButtonGroup>
 			<Link to="/payment" style={{ textDecoration: 'none' }}>
-				<Button 
+				<Button onClick={() => history.push('/payment')}
 					style={{
 					backgroundColor: "#000000"
 					}}
