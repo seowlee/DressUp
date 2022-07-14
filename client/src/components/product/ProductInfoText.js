@@ -1,3 +1,4 @@
+import React from 'react'
 import {BrowserRouter as Router, Link} from 'react-router-dom';
 import NumberProductButton from "./NumberProductButton";
 import {
@@ -5,43 +6,36 @@ import {
 	Typography,
 	Divider,
 	} from '@mui/material';
-import Axios from "axios"
-import React, {useState, useEffect} from 'react'
-
-
 
 const ProductInfoText = () => {
-
-
-	const [image_url, image]=useState('')
-	const [price_sym, price]=useState('')
-	const [lists,viewlist]=useState([
-		{
-			"id": 0,
-			"name": "",
-			"count": "",
-			"color": "",
-			"size": "",
-			"image_url": "",
-			"price": ""
-		}
-	])
-	const [selectedId, setSelectedId]= useState(0)
-	useEffect(() => { Axios.get('http://localhost:3001/api/get').then((response)=>{
-		console.log(response)
-		console.log(response.data[0])
-		viewlist(response.data)
-	})},[])           
-
+	const arr = [
+		{id: 1, name: '옥스퍼드 패널 원피스', price: '1,000,000원', count: '1', color: '라이트 로즈', size: 'xs'},
+		{id: 2, name: '옥스퍼드 패널 원피스', price: '1,000,000원', count: '1', color: '라이트 블루', size: 'xs'},
+		{id: 3, name: 'aaa', price: '1,000원', count: '2', color: '블랙', size: 's'},
+		{id: 4, name: 'bbb', price: '50,000원', count: '3', color: '단색', size: 'L'},
+	];
+	
+	const product = arr.find(obj => {
+		return obj.id === 1;
+	});
+	
+	// 👇️ {id: 1, country: 'Austria'}
+	// console.log(found);
+	
+	// ✅ Find multiple objects that satisfy condition
+	const filtered = arr.filter(obj => {
+		return obj.name === '옥스퍼드 패널 원피스';
+	});
+	// console.log(filtered);
 
 	return (
-	<>
 		<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 			<Grid item xs={12}>
 				<Typography pb={3} variant="h5" component="div">
-					{lists[0].name}
+					{product.name}
 				</Typography>
 			</Grid>
+			{/* <Divider variant="middle" /> */}
 			<Grid item xs={3}>
 				<Typography pb={3} variant="h5" component="div">
 					가격
@@ -49,7 +43,7 @@ const ProductInfoText = () => {
 			</Grid>
 			<Grid item xs={9}>
 				<Typography pb={3} variant="h5" component="div">
-					{lists[0].price}
+					{product.price}
 				</Typography>
 			</Grid>
 			<Grid item xs={3}>
@@ -67,7 +61,7 @@ const ProductInfoText = () => {
 			</Grid>
 			<Grid item xs={9}>
 				<Typography pb={3} variant="h5" component="div">
-					{lists[0].color}
+					{product.color}
 				</Typography>
 			</Grid>
 			<Grid item xs={3}>
@@ -77,11 +71,10 @@ const ProductInfoText = () => {
 			</Grid>
 			<Grid item xs={9}>
 				<Typography pb={3} variant="h5" component="div">
-					{lists[0].size}
+					{product.size}
 				</Typography>
 			</Grid>
 		</Grid>	
-	</>
   )
 }
 

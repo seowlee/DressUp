@@ -38,12 +38,36 @@ const bull = (
 const ProductPaymentfin = () => {
 
   const arr = [
-    {id: 1, name: '테이퍼드핏 데님 팬츠', price: '100000', count: '1', color: '블루', size: 'M',
-    url: ["https://contents.lotteon.com/itemimage/_v121057/LO/16/45/32/86/32/_1/64/53/28/63/3/LO1645328632_1645328633_1.jpg/dims/resizef/720X720",
-          "https://picsum.photos/800/600?random=2",
-          "https://picsum.photos/800/600?random=3",
-          "https://picsum.photos/800/600?random=4"]}
-
+    {
+      id: 1, name: '옥스퍼드 패널 원피스', price: '1000000', count: '1', color: '라이트 로즈', size: 'xs',
+      url: ["https://picsum.photos/800/600?random=1",
+        "https://picsum.photos/800/600?random=2",
+        "https://picsum.photos/800/600?random=3",
+        "https://picsum.photos/800/600?random=4",
+        "https://picsum.photos/800/600?random=4",
+      ]
+    },
+    {
+      id: 2, name: '옥스퍼드 패널 원피스', price: '1000000', count: '1', color: '라이트 블루', size: 'xs',
+      url: ["https://picsum.photos/800/600?random=1",
+        "https://picsum.photos/800/600?random=2",
+        "https://picsum.photos/800/600?random=3",
+        "https://picsum.photos/800/600?random=4"]
+    },
+    {
+      id: 3, name: 'aaa', price: '1000', count: '2', color: '블랙', size: 's',
+      url: ["https://picsum.photos/800/600?random=5",
+        "https://picsum.photos/800/600?random=6",
+        "https://picsum.photos/800/600?random=7",
+        "https://picsum.photos/800/600?random=8"]
+    },
+    {
+      id: 4, name: 'bbb', price: '50000', count: '3', color: '단색', size: 'L',
+      url: ["https://picsum.photos/800/600?random=1",
+        "https://picsum.photos/800/600?random=2",
+        "https://picsum.photos/800/600?random=1",
+        "https://picsum.photos/800/600?random=2"]
+    }
   ];
 
   const result =

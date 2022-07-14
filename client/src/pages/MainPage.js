@@ -35,7 +35,7 @@ export default MainPage;
 
 
 // const submitReview =() => {
-//   Axios.post('http://localhost:3001/api/insert',{image_url: image_url, name: name, color: color, count: count,size: size,price: price})
+//   Axios.post('http://localhost:3001/apit/insert',{image_url: image_url, name: name, color: color, count: count,size: size,price: price})
 // .then(() => {
 // alert('successfully inserted')
 // })
