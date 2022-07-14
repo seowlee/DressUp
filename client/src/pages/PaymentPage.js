@@ -23,7 +23,7 @@ const PaymentPage = () => {
           pg: 'html5_inicis',                           // PG사
           pay_method: 'card',                           // 결제수단
           merchant_uid: `mid_${new Date().getTime()}`,   // 주문번호
-          amount: 1000,                                 // 결제금액
+          amount: 100000,                                 // 결제금액
           name: '상품주문',                  // 주문명
           buyer_name: '김진수',                           // 구매자 이름
           buyer_tel: null,                     // 구매자 전화번호
