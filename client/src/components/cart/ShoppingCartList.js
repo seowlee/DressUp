@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Carousel from 'better-react-carousel';
 import {
 	Grid,
@@ -7,19 +7,6 @@ import {
 	Divider,
 	} from '@mui/material';
 	
-function Comp2({ deleteHandeler, id }) {
-	return (
-	<div>
-		{id}
-		<input
-		type="button"
-		id="delete"
-		value="Delete"
-		onClick={deleteHandeler}
-		/>
-	</div>
-	);
-}
 const arr = [
 	{id: 1, name: '버튼 업 데님 청자켓', price: '120,000원', count: '1', color: '라이트 로즈', size: 'xs',
   url: ["https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1647439234-01152_33080-137919_700x.jpg?crop=1.00xw:0.637xh;0,0.186xh&resize=480:*",
@@ -50,17 +37,19 @@ const ShoppingCartList = () => {
 	// 	const newId = nanoid();
 	// 	setIds((ids) => [...ids, newId]);
 	// };
+	
+	
 
 	const handleRemoveItem = (selectedId) => {
 		const id = selectedId;
-		console.log(id)
+		// console.log(id)
 		//  updateList(list.filter(data => data.id !== id));
 		const temp = [...list];
-		console.log(temp);
+		// console.log(temp);
 		temp.splice(id-1, 1);
-		console.log(temp);
+		// console.log(temp);
 		updateList(temp);
-		console.log(list)
+		// console.log(list)
 	};
   return (
 	<Carousel hideArrow={true} cols={1} rows={arr.length} gap={10} loop>
@@ -96,4 +85,4 @@ const ShoppingCartList = () => {
   )
 }
 
-export default ShoppingCartList
+export default ShoppingCartList;

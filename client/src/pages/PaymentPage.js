@@ -1,13 +1,15 @@
 import React, { useEffect, useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 const PaymentPage = () => {
     const { IMP } = window;
     IMP.init('imp08843501'); // 'imp00000000'
 
-    useEffect(()=>{
-      onClickPayment()
-    },[])
+    
+
+	  const navigate = useNavigate();
+
 
     
 
@@ -44,12 +46,16 @@ const PaymentPage = () => {
     
         if (success) {
           alert('결제가 완료되었습니다. 결제내역 페이지로 이동합니다.');
+          navigate('/paymentfin');
         } else {
           alert(`결제 실패: ${error_msg}`);
         }
       }
     
-    
+      useEffect(()=>{
+        onClickPayment()
+      },[])
+      
     return (
       <div>
       <h2>결제페이지</h2>

@@ -1,14 +1,37 @@
-
+import React from 'react';
 import styled from 'styled-components';
 import ResponsiveAppBar from '../components/appbar/ResponsiveAppBar';
 import ProductInfo from '../components/product/ProductInfo';
 import ShoppingCartButton from '../components/cart/ShoppingCartButton';
 import Axios from "axios"
-import React, {useState, useEffect} from 'react'
 import QRpage from './QRpage';
 import {Link,Route,BrowserRouter as Router} from 'react-router-dom'
 
+const MainPageDiv = styled.div`
+  // background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  
+`
 
+const MainPage = () => {
+  return (
+    <MainPageDiv>
+      <ResponsiveAppBar />
+      <ShoppingCartButton />
+      <ProductInfo />
+      <div >
+        <br></br>
+        <h4>DressUp</h4>
+        <br></br>
+      </div>
+    </MainPageDiv>
+  )
+}
+
+export default MainPage;
 
 
 // const submitReview =() => {
@@ -45,31 +68,3 @@ import {Link,Route,BrowserRouter as Router} from 'react-router-dom'
 //        Size: {val.size} </h1>})}
 //     </div>
 // )}
-
-
-const MainPageDiv = styled.div`
-  // background-color: black;
-  color: white;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  
-`
-
-const MainPage = () => {
-  return (
-    <MainPageDiv>
-      <ResponsiveAppBar />
-      <ShoppingCartButton />
-      <ProductInfo />
-      <div >
-        <br></br>
-        <h4>DressUp</h4>
-        <br></br>
-      </div>
-    </MainPageDiv>
-  )
-}
-
-export default MainPage;
-

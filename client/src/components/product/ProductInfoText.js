@@ -12,6 +12,7 @@ import React, {useState, useEffect} from 'react'
 
 const ProductInfoText = () => {
 
+
 	const [image_url, image]=useState('')
 	const [price_sym, price]=useState('')
 	const [lists,viewlist]=useState([
@@ -31,6 +32,7 @@ const ProductInfoText = () => {
 		console.log(response.data[0])
 		viewlist(response.data)
 	})},[])           
+
 
 	return (
 	<>

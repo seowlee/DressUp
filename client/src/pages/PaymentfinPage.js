@@ -19,4 +19,3 @@ const PaymentFinPage = () => {
   }
   export default PaymentFinPage;
 
-  
