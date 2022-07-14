@@ -4,6 +4,8 @@ import {
 	Grid,
 	Typography,
 	Divider,
+	Button,
+	ButtonGroup
 	} from '@mui/material';
 import Axios from "axios"
 import React, {useState, useEffect} from 'react'
@@ -74,6 +76,36 @@ const ProductInfoText = () => {
 				<Typography pb={3} variant="h5" component="div">
 					사이즈
 				</Typography>
+			</Grid>
+			<Grid item xs={9}>
+				{/* <Typography pb={3} variant="h5" component="div">
+					{product.size}
+				</Typography> */}
+				<Grid 
+					container justifyContent="center" 
+					alignItems="center">
+					<ButtonGroup>
+							<Button 
+								style={{
+								backgroundColor: "#000000"
+								}}
+								sx={{mx:1}}
+								variant="contained" 
+								size="small"
+							>s</Button>
+						<Button 
+							style={{
+								backgroundColor: "#000000"
+							}}
+							sx={{mx:1}} variant="contained" size="small"
+						>m</Button>
+							<Button 
+								style={{
+									backgroundColor: "#000000"
+								}}
+								sx={{mx:1}} variant="contained" size="small">L</Button>
+					</ButtonGroup>
+				</Grid>
 			</Grid>
 			<Grid item xs={9}>
 				<Typography pb={3} variant="h5" component="div">

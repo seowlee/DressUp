@@ -5,7 +5,6 @@ import {
 	Button,
 	ButtonGroup,
 	} from '@mui/material';
-import { prototype } from 'react-modal';
 import {handleAddItem} from '../cart/ShoppingCartList';
 
 const arr = [

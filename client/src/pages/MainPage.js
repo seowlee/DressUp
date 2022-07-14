@@ -24,7 +24,7 @@ const MainPage = () => {
       <ProductInfo />
       <div >
         <br></br>
-        <h4>DressUp</h4>
+        <h4>&copy;DressUp, Inc. All copyrights reserved</h4>
         <br></br>
       </div>
     </MainPageDiv>

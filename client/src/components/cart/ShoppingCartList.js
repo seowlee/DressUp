@@ -7,30 +7,14 @@ import {
 	Divider,
 	} from '@mui/material';
 	
-const arr = [
-	{id: 1, name: '버튼 업 데님 청자켓', price: '120,000원', count: '1', color: '라이트 로즈', size: 'xs',
-  url: ["https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1647439234-01152_33080-137919_700x.jpg?crop=1.00xw:0.637xh;0,0.186xh&resize=480:*",
-		"https://picsum.photos/800/600?random=2",
-		"https://picsum.photos/800/600?random=3",
-		"https://picsum.photos/800/600?random=4",
-		"https://picsum.photos/800/600?random=4",
-	  ]},
-	{id: 2, name: '검정 슬랙스', price: '60,000원', count: '1', color: '라이트 블루', size: 'xs',
-  url: ["http://m.dunchi.co.kr/web/product/medium/202110/67dc05e6dc944401fdd1ec6e9a1ddd96.jpg",
-		"https://picsum.photos/800/600?random=2",
-		"https://picsum.photos/800/600?random=3",
-		"https://picsum.photos/800/600?random=4"]},
-	{id: 3, name: '나이키 킬샷 레더 2', price: '80,000원', count: '2', color: '블랙', size: 's',
-  url: ["https://static.nike.com/a/images/t_default/exz5hx5lva0ysh6ghhco/killshot-2-leather-mens-shoe-zrq1wk.png",
-		"https://picsum.photos/800/600?random=6",
-		"https://picsum.photos/800/600?random=7",
-		"https://picsum.photos/800/600?random=8"]},
-	{id: 4, name: '릴랙스드 핏 팬츠', price: '70,000원', count: '3', color: '단색', size: 'L',
-  url: ["https://www.costco.co.kr/medias/sys_master/images/h3d/hec/102204227223582.jpg",
-		"https://picsum.photos/800/600?random=2",
-		"https://picsum.photos/800/600?random=1",
-		"https://picsum.photos/800/600?random=2"]}
-];
+	const arr = [
+		{id: 1, name: '테이퍼드핏 데님 팬츠', price: '100,000원', count: '1', color: '워시드 블루', size: 'M',
+		url: ["https://contents.lotteon.com/itemimage/_v121057/LO/16/45/32/86/32/_1/64/53/28/63/3/LO1645328632_1645328633_1.jpg/dims/resizef/720X720",
+			  "https://picsum.photos/800/600?random=2",
+			  "https://picsum.photos/800/600?random=3",
+			  "https://picsum.photos/800/600?random=4"]}
+	
+	  ];
 const ShoppingCartList = () => {
 	const [list, updateList] = useState(arr);
 	// const addHandeler = () => {
@@ -68,6 +52,12 @@ const ShoppingCartList = () => {
 					</Typography>
 					<Typography variant="h6" component="div" align='left'>
 						{data.price}
+					</Typography>
+					<Typography variant="h6" component="div" align='left'>
+						{data.color}
+					</Typography>
+					<Typography variant="h6" component="div" align='left'>
+						{data.size}
 					</Typography>
 				</Grid>
 				<Grid item xs={2}>

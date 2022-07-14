@@ -38,7 +38,7 @@ const bull = (
 const ProductPaymentfin = () => {
 
   const arr = [
-    {id: 1, name: '테이퍼드핏 데님 팬츠', price: '100000', count: '1', color: '블루', size: 'M',
+    {id: 1, name: '테이퍼드핏 데님 팬츠', price: '100000', count: '1', color: '워시드 블루', size: 'M',
     url: ["https://contents.lotteon.com/itemimage/_v121057/LO/16/45/32/86/32/_1/64/53/28/63/3/LO1645328632_1645328633_1.jpg/dims/resizef/720X720",
           "https://picsum.photos/800/600?random=2",
           "https://picsum.photos/800/600?random=3",

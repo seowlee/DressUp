@@ -18,7 +18,10 @@ const QR = (props) => {
         onResult={(result, error) => {
           if (!!result) {
             setData(result?.text);
+            console.log(result)
+            navigate("/main")
           }
+
 
           if (!!error) {
             console.info(error);
@@ -27,7 +30,7 @@ const QR = (props) => {
         style={{ width: '100%' }}
       />
       <BottomNav/>
-      {/* <h4>&copy;DressUp, Inc. All copyrights reserved</h4> */}
+      <h4>&copy;DressUp, Inc. All copyrights reserved</h4>
    
       {/* <Route
       path='/MainPage'
