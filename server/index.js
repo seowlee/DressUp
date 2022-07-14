@@ -19,7 +19,7 @@ const db= mysql.createPool({
 
 
 app.get('/api/get',(req,res) => {
-    const sqlSelect= 'SELECT * FROM item_list';
+    const sqlSelect= 'SELECT * FROM item_list WHERE id=1';
     db.query(sqlSelect, (err,result) =>
         {res.send(result)
 })
