@@ -20,14 +20,13 @@ function App() {
     // <Routes />
     <BrowserRouter>
 		  <Routes>
-			  <Route path="/" element={<LogoPage />}></Route>
+		  <Route path="/" element={<LogoPage />}></Route>
 			  <Route path="/main" element={<MainPage />}></Route>
 			  <Route path="/QRpage" element={<QRpage />}></Route>
 			  <Route path='/QRstock' element={<QRpage/>}></Route>
 			  <Route path="/payment" element={<PaymentPage />}></Route>
 			  <Route path="/paymentfin" element={<PaymentFinPage />}></Route>
 			  <Route path="/shoppingcart" element={<ShoppingCartPage />}></Route>
-
 		  </Routes>
 	</BrowserRouter>
   );
